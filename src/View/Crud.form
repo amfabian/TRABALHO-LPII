@@ -332,7 +332,7 @@
                           <Component id="btn_editar_avaliacao" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_excluir_avaliacao" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="70" max="32767" attributes="0"/>
+                      <EmptySpace pref="68" max="32767" attributes="0"/>
                       <Component id="pnl_avaliacao" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
@@ -424,22 +424,15 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lbl_idbanca_avaliacao" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="c_idbanca_avaliacao" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_matricula_avaliacao" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_nota_avaliacao" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="c_matricula_avaliacao" max="32767" attributes="0"/>
-                                      <Component id="c_nota_avaliacao" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="lbl_matricula_avaliacao" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_nota_avaliacao" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_idbanca_avaliacao" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="cb_idbanca_avaliacao" max="32767" attributes="0"/>
+                              <Component id="c_matricula_avaliacao" max="32767" attributes="0"/>
+                              <Component id="c_nota_avaliacao" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -458,7 +451,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_idbanca_avaliacao" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="c_idbanca_avaliacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cb_idbanca_avaliacao" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -485,8 +478,6 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="ID Banca:"/>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="c_idbanca_avaliacao">
                 </Component>
                 <Component class="javax.swing.JLabel" name="lbl_matricula_avaliacao">
                   <Properties>
@@ -517,6 +508,16 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_cancelar_avaliacaoActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cb_idbanca_avaliacao">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
@@ -675,9 +676,9 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="c_idbanca_banca" max="32767" attributes="0"/>
-                                      <Component id="c_orientador_banca" max="32767" attributes="0"/>
-                                      <Component id="c_avaliadorI_banca" max="32767" attributes="0"/>
-                                      <Component id="c_avaliadorII_banca" max="32767" attributes="0"/>
+                                      <Component id="cb_avaliadorII_banca" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="cb_avaliadorI_banca" max="32767" attributes="0"/>
+                                      <Component id="cb_orientador_banca" alignment="1" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -691,17 +692,17 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_avaliadorI_banca" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="c_avaliadorI_banca" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cb_avaliadorI_banca" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_avaliadorII_banca" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="c_avaliadorII_banca" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cb_avaliadorII_banca" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_orientador_banca" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="c_orientador_banca" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cb_orientador_banca" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -724,21 +725,15 @@
                     <Property name="text" type="java.lang.String" value="Avaliador I:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="c_avaliadorI_banca">
-                </Component>
                 <Component class="javax.swing.JLabel" name="lbl_avaliadorII_banca">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Avaliador II:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="c_avaliadorII_banca">
-                </Component>
                 <Component class="javax.swing.JLabel" name="lbl_orientador_banca">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Orientador:"/>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="c_orientador_banca">
                 </Component>
                 <Component class="javax.swing.JLabel" name="lbl_idbanca_banca">
                   <Properties>
@@ -762,6 +757,36 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_cancelar_bancaActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cb_avaliadorI_banca">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cb_avaliadorII_banca">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cb_orientador_banca">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
@@ -1064,7 +1089,7 @@
                           <Component id="btn_editar_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_excluir_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="18" max="32767" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                       <Component id="pnl_propostatc" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1156,28 +1181,28 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="lbl_titulo_propostatc" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="c_titulo_propostatc" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="lbl_autor_propostatc" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="c_autor_propostatc" max="32767" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lbl_orientador_propostatc" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="c_orientador_propostatc" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <Component id="btn_salvar_propostatc" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Component id="btn_cancelar_propostatc" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                                       </Group>
+                                      <Component id="cb_orientador_propostatc" max="32767" attributes="0"/>
                                   </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbl_autor_propostatc" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="cb_autor_propostatc" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbl_titulo_propostatc" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="c_titulo_propostatc" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -1195,12 +1220,12 @@
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_autor_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="c_autor_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cb_autor_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_orientador_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="c_orientador_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cb_orientador_propostatc" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="39" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1225,14 +1250,10 @@
                     <Property name="text" type="java.lang.String" value="Autor:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="c_autor_propostatc">
-                </Component>
                 <Component class="javax.swing.JLabel" name="lbl_orientador_propostatc">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Orientador:"/>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="c_orientador_propostatc">
                 </Component>
                 <Component class="javax.swing.JButton" name="btn_salvar_propostatc">
                   <Properties>
@@ -1246,6 +1267,29 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Cancelar"/>
                   </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cb_autor_propostatc">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb_autor_propostatcActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cb_orientador_propostatc">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
