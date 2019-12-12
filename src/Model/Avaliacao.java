@@ -117,7 +117,6 @@ public class Avaliacao {
                     break;
                 }                    
         }
-        System.out.println("ACHOU: "+achou);
         if(achou){
             jA.remove(i);
             ArquivoAvaliacao.Write(jA.toString());

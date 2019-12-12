@@ -74,28 +74,17 @@ public class Aluno {
     
     public boolean Persistir(boolean editar_aluno){
         JSONObject json = this.toJson();
-        
-        System.out.println("JSON: "+json); // 
-        
         String base = ArquivoAluno.Read();
         JSONArray jA = new JSONArray();
         
         if(!base.isEmpty() && base.length()>5) 
             jA = new JSONArray(base);
-        System.out.println("jA antes da inserção: " + jA); //JSONs no arquivo
-        //INSERIR CODIGO DE VERIFACAO ANTES DA INSERçAO
-        System.out.println("jA tamanho:  " + jA.length());
         
-        for(int i = 0; i <jA.length();i++){
-           if(jA.getJSONObject(i).similar(json)) System.out.println("DEU BOM!");
-        }
         //obtem a matricula!
        if (jA.isNull(0)){
-           System.out.println("jA VAZIO - PRIMEIRA INSERçAO");
            jA.put(json);
        }else {
            // verifica se o arquivo esta vazio
-       System.out.println("GET : " + jA.getJSONObject(0).getInt("matricula"));
        
         //caso o arquivo nao esteja vazio, procura por matricula repetida e impede a insercao
        boolean achou = false;
@@ -105,10 +94,8 @@ public class Aluno {
                 if(jA.getJSONObject(i).getString("matricula").equals(json.getString("matricula"))){
                 achou = true;
                 if(editar_aluno){
-                    System.out.println("ENTROU NO EDITAR!");
                     jA.put(i, json);
                     ArquivoAluno.Write(jA.toString());
-                    
                 }
                 break;
                 } else {achou = false;}}
@@ -117,22 +104,9 @@ public class Aluno {
                 return (false ||editar_aluno);
                 
             } else {
-                System.out.println("jA.get : " + jA.getJSONObject(0).getInt("matricula"));
-                System.out.println("json.get: " + json.getInt("matricula"));
                 jA.put(json);
                 }
-            
-            
-            
-            
-       }
-           
-    
-            
-        
-        
-        
-        System.out.println("jA DEPOIS da inserção: " + jA);
+        }
         
         ArquivoAluno.Write(jA.toString());
         return true;
@@ -158,15 +132,9 @@ public class Aluno {
             jA.remove(i);
             ArquivoAluno.Write(jA.toString());
         }
-        
         return achou;
-        
-        
-    
-    
     }
-    
-    
+       
     public static ArrayList<Aluno> getAlunos(){
         ArrayList<Aluno> alunos = new ArrayList();
         String base = ArquivoAluno.Read();
@@ -180,7 +148,4 @@ public class Aluno {
         }
         return alunos;
     }
-
-   
-    
 }

@@ -79,15 +79,11 @@ public class Professor {
         JSONArray jA = new JSONArray();
         if(!base.isEmpty() && base.length()>5)
             jA = new JSONArray(base);
-        System.out.println("jA antes da inserção: " + jA); //JSONs no arquivo
-        System.out.println("jA tamanho:  " + jA.length());
         
         if (jA.isNull(0)){
-           System.out.println("jA VAZIO - PRIMEIRA INSERçAO");
            jA.put(json);
        }else {
            // verifica se o arquivo esta vazio
-            System.out.println("GET : " + jA.getJSONObject(0).getString("nome"));
        
             //caso o arquivo nao esteja vazio, procura por matricula repetida e impede a insercao
             boolean achou = false;
@@ -98,9 +94,7 @@ public class Professor {
                 if(jA.getJSONObject(i).getString("nome").equals(json.getString("nome")))
                {
                 achou = true;
-                System.out.println("achou true");
                 if(editar){
-                   System.out.println("ENTROU NO EDITAR!");
                    jA.put(i, json);
                    ArquivoProfessor.Write(jA.toString());
                 }
@@ -112,12 +106,9 @@ public class Professor {
                 return (false||editar);
                 
             } else {
-                System.out.println("jA.get : " + jA.getJSONObject(0).getString("nome"));
-                System.out.println("json.get: " + json.getString("nome"));
                 jA.put(json);
                 }   
        }
-        System.out.println("jA DEPOIS da inserção: " + jA);
         ArquivoProfessor.Write(jA.toString());
          
         return true;
@@ -144,9 +135,6 @@ public class Professor {
         }        
         return achou;
     }
-    
-   
-    
     
     public static ArrayList<Professor> getProfessores(){
         ArrayList<Professor> professores = new ArrayList();

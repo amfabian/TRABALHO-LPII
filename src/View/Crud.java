@@ -103,7 +103,6 @@ public class Crud extends javax.swing.JFrame {
         
         cb_avaliadorI_banca.addItem("Selecione");
          for (int i = 0; i< tbl_professor.getRowCount();i++){
-            System.out.println("PRofs: "+tbl_professor.getValueAt(i, 0).toString()+cb_orientador_banca.getSelectedItem());
             if(!tbl_professor.getValueAt(i, 0).toString().equals(cb_orientador_banca.getSelectedItem())){
                 cb_avaliadorI_banca.addItem(tbl_professor.getValueAt(i, 0).toString());
             }
@@ -114,8 +113,6 @@ public class Crud extends javax.swing.JFrame {
         
         cb_avaliadorII_banca.addItem("Selecione");
          for (int i = 0; i< tbl_professor.getRowCount();i++){
-            System.out.println("PRofs TB+AvI"+tbl_professor.getValueAt(i, 0).toString()+cb_avaliadorI_banca.getSelectedItem());
-            System.out.println("PRofs TB+Orie: "+tbl_professor.getValueAt(i, 0).toString()+cb_orientador_banca.getSelectedItem());
             if(!(tbl_professor.getValueAt(i, 0).toString().equals(cb_orientador_banca.getSelectedItem()) || tbl_professor.getValueAt(i, 0).toString().equals(cb_avaliadorI_banca.getSelectedItem()))){
                 cb_avaliadorII_banca.addItem(tbl_professor.getValueAt(i, 0).toString());
             }
@@ -124,23 +121,18 @@ public class Crud extends javax.swing.JFrame {
    
      public void LoadCBOrientador_banca (){
         cb_orientador_banca.removeAllItems();
-         System.out.println("cb_orientador INICIO count: "+ cb_orientador_banca.getComponentCount());
 
         cb_orientador_banca.addItem("Selecione");
-        System.out.println("cb_orientador ANTES count: "+ cb_orientador_banca.getItemCount());
         for (int i = 0; i< tbl_propostatc.getRowCount();i++){
 
             for (int k = 0; k < cb_orientador_banca.getItemCount();k++){
                 if(cb_orientador_banca.getItemAt(k).equals(tbl_propostatc.getValueAt(i, 2).toString())){
-                    System.out.println("TRUE: "+ cb_orientador_banca.getItemAt(k)+tbl_propostatc.getValueAt(i, 2).toString()); 
                     cb_orientador_banca.removeItemAt(k);
                 }
-                System.out.println("tbl_propostas: "+tbl_propostatc.getValueAt(i, 2).toString()); 
 
             }
             cb_orientador_banca.addItem(tbl_propostatc.getValueAt(i, 2).toString());
 
-            System.out.println("cb_orientador count: "+cb_orientador_banca.getItemCount());
 
 
         }
@@ -1448,14 +1440,12 @@ public class Crud extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_cancelar_propostatcActionPerformed
 
     private void cb_orientador_bancaPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_cb_orientador_bancaPropertyChange
-        System.out.println("PropertyChange");
         //LoadCBAvaliadorII();
        
         // TODO add your handling code here:
     }//GEN-LAST:event_cb_orientador_bancaPropertyChange
 
     private void cb_orientador_bancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_orientador_bancaActionPerformed
-       System.out.println("Action CB-ORIENTADOR");
         //LoadCBAvaliadorII();
         if(cb_orientador_banca.getItemCount()>1) {
             LoadCBAvaliadorII();
@@ -1466,7 +1456,6 @@ public class Crud extends javax.swing.JFrame {
     }//GEN-LAST:event_cb_orientador_bancaActionPerformed
 
     private void cb_avaliadorI_bancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_avaliadorI_bancaActionPerformed
-       System.out.println("Action CB-AVALIADOR");
         //LoadCBAvaliadorII();
         if(cb_orientador_banca.getItemCount()>1) {
             LoadCBAvaliadorII();
