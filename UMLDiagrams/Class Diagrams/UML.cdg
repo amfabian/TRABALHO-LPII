@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="java">
+  <ClassDiagramComponents>
+    <Class name="AlunoControl" package="Controller" visibility="public" xPosition="685.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="SalvarAluno" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Matricula"/>
+          <Argument type="String" name="Nome"/>
+          <Argument type="String" name="Email"/>
+          <Argument type="String" name="Telefone"/>
+          <Argument type="boolean" name="editar_aluno"/>
+        </Method>
+        <Method name="ExcluirAluno" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Matricula"/>
+          <Argument type="String" name="Nome"/>
+          <Argument type="String" name="Email"/>
+          <Argument type="String" name="Telefone"/>
+        </Method>
+        <Method name="getAlunos" returnType="ArrayList&lt;String[]&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="AvaliacaoControl" package="Controller" visibility="public" xPosition="2043.0" yPosition="204.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="SalvarAvaliacao" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="IDBanca"/>
+          <Argument type="String" name="Matricula"/>
+          <Argument type="String" name="Nota"/>
+          <Argument type="boolean" name="editar_avaliacao"/>
+        </Method>
+        <Method name="ExcluirAvaliacao" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="IDBanca"/>
+          <Argument type="String" name="Matricula"/>
+          <Argument type="String" name="Nota"/>
+        </Method>
+        <Method name="getAvaliacoes" returnType="ArrayList&lt;String[]&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="BancaControl" package="Controller" visibility="public" xPosition="691.0" yPosition="204.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="SalvarBanca" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Av1"/>
+          <Argument type="String" name="Av2"/>
+          <Argument type="String" name="Orientador"/>
+          <Argument type="String" name="IDBanca"/>
+          <Argument type="boolean" name="editar_banca"/>
+        </Method>
+        <Method name="ExcluirBanca" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Av1"/>
+          <Argument type="String" name="Av2"/>
+          <Argument type="String" name="Orientador"/>
+          <Argument type="String" name="IDBanca"/>
+        </Method>
+        <Method name="getBancas" returnType="ArrayList&lt;String[]&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="ProfessorControl" package="Controller" visibility="public" xPosition="1346.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="SalvarProfessor" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Nome"/>
+          <Argument type="String" name="Email"/>
+          <Argument type="String" name="Area"/>
+          <Argument type="String" name="Sujestao"/>
+          <Argument type="boolean" name="editar_professor"/>
+        </Method>
+        <Method name="ExcluirProfessor" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Nome"/>
+          <Argument type="String" name="Email"/>
+          <Argument type="String" name="Area"/>
+          <Argument type="String" name="Sujestao"/>
+        </Method>
+        <Method name="getProfessores" returnType="ArrayList&lt;String[]&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="PropostaTCControl" package="Controller" visibility="public" xPosition="2043.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="SalvarPropostaTC" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Titulo"/>
+          <Argument type="String" name="Autor"/>
+          <Argument type="String" name="Orientador"/>
+          <Argument type="boolean" name="editar_proposta"/>
+        </Method>
+        <Method name="ExcluirPropostaTC" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Titulo"/>
+          <Argument type="String" name="Autor"/>
+          <Argument type="String" name="Orientador"/>
+        </Method>
+        <Method name="getPropostas" returnType="ArrayList&lt;String[]&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="JSONArray" package="json" visibility="public" xPosition="1512.0" yPosition="233.0">
+      <Fields>
+        <Field name="myArrayList" type="ArrayList&lt;Object&gt;" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="JSONTokener" name="x"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="source"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Collection&lt;Object&gt;" name="collection"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Object" name="array"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="get" returnType="Object" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getBoolean" returnType="boolean" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getDouble" returnType="double" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getInt" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getJSONArray" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getJSONObject" returnType="JSONObject" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getLong" returnType="long" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getString" returnType="String" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="isNull" returnType="boolean" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="join" returnType="String" visibility="public">
+          <Argument type="String" name="separator"/>
+        </Method>
+        <Method name="length" returnType="int" visibility="public"/>
+        <Method name="opt" returnType="Object" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optBoolean" returnType="boolean" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optBoolean" returnType="boolean" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="boolean" name="defaultValue"/>
+        </Method>
+        <Method name="optDouble" returnType="double" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optDouble" returnType="double" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="double" name="defaultValue"/>
+        </Method>
+        <Method name="optInt" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optInt" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="int" name="defaultValue"/>
+        </Method>
+        <Method name="optJSONArray" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optJSONObject" returnType="JSONObject" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optLong" returnType="long" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optLong" returnType="long" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="long" name="defaultValue"/>
+        </Method>
+        <Method name="optString" returnType="String" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="optString" returnType="String" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="String" name="defaultValue"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="boolean" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="Collection&lt;Object&gt;" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="double" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="long" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="Map&lt;String, Object&gt;" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="boolean" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="Collection&lt;Object&gt;" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="double" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="int" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="long" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="Map&lt;String, Object&gt;" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONArray" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="remove" returnType="Object" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="similar" returnType="boolean" visibility="public">
+          <Argument type="Object" name="other"/>
+        </Method>
+        <Method name="toJSONObject" returnType="JSONObject" visibility="public">
+          <Argument type="JSONArray" name="names"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public">
+          <Argument type="int" name="indentFactor"/>
+        </Method>
+        <Method name="write" returnType="Writer" visibility="public">
+          <Argument type="Writer" name="writer"/>
+        </Method>
+        <Method name="write" returnType="Writer" visibility="package">
+          <Argument type="Writer" name="writer"/>
+          <Argument type="int" name="indentFactor"/>
+          <Argument type="int" name="indent"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JSONException" package="json" visibility="public" xPosition="768.0" yPosition="548.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="cause" type="Throwable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="message"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="cause"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCause" returnType="Throwable" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JSONObject" package="json" visibility="public" xPosition="1479.0" yPosition="1406.0">
+      <Fields>
+        <Field name="map" type="Map&lt;String, Object&gt;" visibility="private" isFinal="true"/>
+        <Field name="NULL" type="Object" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="JSONObject" name="jo"/>
+          <Argument type="String[]" name="names"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JSONTokener" name="x"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Map&lt;String, Object&gt;" name="map"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Object" name="bean"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Object" name="object"/>
+          <Argument type="String" name="names"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="source"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="baseName"/>
+          <Argument type="Locale" name="locale"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="accumulate" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="append" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="doubleToString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="double" name="d"/>
+        </Method>
+        <Method name="get" returnType="Object" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getBoolean" returnType="boolean" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getDouble" returnType="double" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getInt" returnType="int" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getJSONArray" returnType="JSONArray" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getJSONObject" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getLong" returnType="long" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getNames" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="JSONObject" name="jo"/>
+        </Method>
+        <Method name="getNames" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="getString" returnType="String" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="has" returnType="boolean" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="increment" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="isNull" returnType="boolean" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="keys" returnType="Iterator&lt;String&gt;" visibility="public"/>
+        <Method name="keySet" returnType="Set&lt;String&gt;" visibility="public"/>
+        <Method name="length" returnType="int" visibility="public"/>
+        <Method name="names" returnType="JSONArray" visibility="public"/>
+        <Method name="numberToString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="Number" name="number"/>
+        </Method>
+        <Method name="opt" returnType="Object" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optBoolean" returnType="boolean" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optBoolean" returnType="boolean" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="boolean" name="defaultValue"/>
+        </Method>
+        <Method name="optDouble" returnType="double" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optDouble" returnType="double" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="double" name="defaultValue"/>
+        </Method>
+        <Method name="optInt" returnType="int" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optInt" returnType="int" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="int" name="defaultValue"/>
+        </Method>
+        <Method name="optJSONArray" returnType="JSONArray" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optJSONObject" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optLong" returnType="long" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optLong" returnType="long" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="long" name="defaultValue"/>
+        </Method>
+        <Method name="optString" returnType="String" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="optString" returnType="String" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="String" name="defaultValue"/>
+        </Method>
+        <Method name="populateMap" returnType="void" visibility="private">
+          <Argument type="Object" name="bean"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="boolean" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Collection&lt;Object&gt;" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="double" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="int" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="long" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Map&lt;String, Object&gt;" name="value"/>
+        </Method>
+        <Method name="put" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="putOnce" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="putOpt" returnType="JSONObject" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="quote" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="string"/>
+        </Method>
+        <Method name="quote" returnType="Writer" visibility="public" isStatic="true">
+          <Argument type="String" name="string"/>
+          <Argument type="Writer" name="w"/>
+        </Method>
+        <Method name="remove" returnType="Object" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="similar" returnType="boolean" visibility="public">
+          <Argument type="Object" name="other"/>
+        </Method>
+        <Method name="stringToValue" returnType="Object" visibility="public" isStatic="true">
+          <Argument type="String" name="string"/>
+        </Method>
+        <Method name="testValidity" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="toJSONArray" returnType="JSONArray" visibility="public">
+          <Argument type="JSONArray" name="names"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public">
+          <Argument type="int" name="indentFactor"/>
+        </Method>
+        <Method name="valueToString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="wrap" returnType="Object" visibility="public" isStatic="true">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="write" returnType="Writer" visibility="public">
+          <Argument type="Writer" name="writer"/>
+        </Method>
+        <Method name="writeValue" returnType="Writer" visibility="package" isStatic="true" isFinal="true">
+          <Argument type="Writer" name="writer"/>
+          <Argument type="Object" name="value"/>
+          <Argument type="int" name="indentFactor"/>
+          <Argument type="int" name="indent"/>
+        </Method>
+        <Method name="indent" returnType="void" visibility="package" isStatic="true" isFinal="true">
+          <Argument type="Writer" name="writer"/>
+          <Argument type="int" name="indent"/>
+        </Method>
+        <Method name="write" returnType="Writer" visibility="package">
+          <Argument type="Writer" name="writer"/>
+          <Argument type="int" name="indentFactor"/>
+          <Argument type="int" name="indent"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JSONStringer" package="json" visibility="public" xPosition="1316.0" yPosition="885.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JSONTokener" package="json" visibility="public" xPosition="1026.0" yPosition="403.0">
+      <Fields>
+        <Field name="character" type="long" visibility="private"/>
+        <Field name="eof" type="boolean" visibility="private"/>
+        <Field name="index" type="long" visibility="private"/>
+        <Field name="line" type="long" visibility="private"/>
+        <Field name="previous" type="char" visibility="private"/>
+        <Field name="reader" type="Reader" visibility="private"/>
+        <Field name="usePrevious" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Reader" name="reader"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="InputStream" name="inputStream"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="back" returnType="void" visibility="public"/>
+        <Method name="dehexchar" returnType="int" visibility="public" isStatic="true">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="end" returnType="boolean" visibility="public"/>
+        <Method name="more" returnType="boolean" visibility="public"/>
+        <Method name="next" returnType="char" visibility="public"/>
+        <Method name="next" returnType="char" visibility="public">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="next" returnType="String" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="nextClean" returnType="char" visibility="public"/>
+        <Method name="nextString" returnType="String" visibility="public">
+          <Argument type="char" name="quote"/>
+        </Method>
+        <Method name="nextTo" returnType="String" visibility="public">
+          <Argument type="char" name="delimiter"/>
+        </Method>
+        <Method name="nextTo" returnType="String" visibility="public">
+          <Argument type="String" name="delimiters"/>
+        </Method>
+        <Method name="nextValue" returnType="Object" visibility="public"/>
+        <Method name="skipTo" returnType="char" visibility="public">
+          <Argument type="char" name="to"/>
+        </Method>
+        <Method name="syntaxError" returnType="JSONException" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JSONWriter" package="json" visibility="public" xPosition="1051.0" yPosition="1037.0">
+      <Fields>
+        <Field name="maxdepth" type="int" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="comma" type="boolean" visibility="private"/>
+        <Field name="mode" type="char" visibility="protected"/>
+        <Field name="stack" type="JSONObject" visibility="private" isFinal="true"/>
+        <Field name="top" type="int" visibility="private"/>
+        <Field name="writer" type="Writer" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Writer" name="w"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="append" returnType="JSONWriter" visibility="private">
+          <Argument type="String" name="string"/>
+        </Method>
+        <Method name="array" returnType="JSONWriter" visibility="public"/>
+        <Method name="end" returnType="JSONWriter" visibility="private">
+          <Argument type="char" name="mode"/>
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="endArray" returnType="JSONWriter" visibility="public"/>
+        <Method name="endObject" returnType="JSONWriter" visibility="public"/>
+        <Method name="key" returnType="JSONWriter" visibility="public">
+          <Argument type="String" name="string"/>
+        </Method>
+        <Method name="object" returnType="JSONWriter" visibility="public"/>
+        <Method name="pop" returnType="void" visibility="private">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="push" returnType="void" visibility="private">
+          <Argument type="JSONObject" name="jo"/>
+        </Method>
+        <Method name="value" returnType="JSONWriter" visibility="public">
+          <Argument type="boolean" name="b"/>
+        </Method>
+        <Method name="value" returnType="JSONWriter" visibility="public">
+          <Argument type="double" name="d"/>
+        </Method>
+        <Method name="value" returnType="JSONWriter" visibility="public">
+          <Argument type="long" name="l"/>
+        </Method>
+        <Method name="value" returnType="JSONWriter" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Aluno" package="Model" visibility="public" xPosition="867.0" yPosition="1697.0">
+      <Fields>
+        <Field name="Matricula" type="String" visibility="private"/>
+        <Field name="Nome" type="String" visibility="private"/>
+        <Field name="Email" type="String" visibility="private"/>
+        <Field name="Telefone" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Matricula"/>
+          <Argument type="String" name="Nome"/>
+          <Argument type="String" name="Email"/>
+          <Argument type="String" name="Telefone"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JSONObject" name="json"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="Matricula"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="Nome"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="Email"/>
+        </Method>
+        <Method name="getTelefone" returnType="String" visibility="public"/>
+        <Method name="setTelefone" returnType="void" visibility="public">
+          <Argument type="String" name="Telefone"/>
+        </Method>
+        <Method name="toJson" returnType="JSONObject" visibility="public"/>
+        <Method name="Persistir" returnType="boolean" visibility="public">
+          <Argument type="boolean" name="editar_aluno"/>
+        </Method>
+        <Method name="Remover" returnType="boolean" visibility="public"/>
+        <Method name="getAlunos" returnType="ArrayList&lt;Aluno&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Avaliacao" package="Model" visibility="public" xPosition="1902.0" yPosition="508.0">
+      <Fields>
+        <Field name="IDBanca" type="String" visibility="private"/>
+        <Field name="Matricula" type="String" visibility="private"/>
+        <Field name="Nota" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="IDBanca"/>
+          <Argument type="String" name="Matricula"/>
+          <Argument type="String" name="Nota"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JSONObject" name="json"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIDBanca" returnType="String" visibility="public"/>
+        <Method name="setIDBanca" returnType="void" visibility="public">
+          <Argument type="String" name="IDBanca"/>
+        </Method>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="Matricula"/>
+        </Method>
+        <Method name="getNota" returnType="String" visibility="public"/>
+        <Method name="setNota" returnType="void" visibility="public">
+          <Argument type="String" name="Nota"/>
+        </Method>
+        <Method name="toJson" returnType="JSONObject" visibility="public"/>
+        <Method name="Persistir" returnType="boolean" visibility="public">
+          <Argument type="boolean" name="editar"/>
+        </Method>
+        <Method name="Remover" returnType="boolean" visibility="public"/>
+        <Method name="getAvaliacoes" returnType="ArrayList&lt;Avaliacao&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Banca" package="Model" visibility="public" xPosition="2380.0" yPosition="1573.0">
+      <Fields>
+        <Field name="Av1" type="String" visibility="private"/>
+        <Field name="Av2" type="String" visibility="private"/>
+        <Field name="Orientador" type="String" visibility="private"/>
+        <Field name="IDBanca" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Av1"/>
+          <Argument type="String" name="Av2"/>
+          <Argument type="String" name="Orientador"/>
+          <Argument type="String" name="IDBanca"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JSONObject" name="json"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAv1" returnType="String" visibility="public"/>
+        <Method name="setAv1" returnType="void" visibility="public">
+          <Argument type="String" name="Av1"/>
+        </Method>
+        <Method name="getAv2" returnType="String" visibility="public"/>
+        <Method name="setAv2" returnType="void" visibility="public">
+          <Argument type="String" name="Av2"/>
+        </Method>
+        <Method name="getOrientador" returnType="String" visibility="public"/>
+        <Method name="setOrientador" returnType="void" visibility="public">
+          <Argument type="String" name="Orientador"/>
+        </Method>
+        <Method name="getIDBanca" returnType="String" visibility="public"/>
+        <Method name="setIDBanca" returnType="void" visibility="public">
+          <Argument type="String" name="IDBanca"/>
+        </Method>
+        <Method name="toJson" returnType="JSONObject" visibility="public"/>
+        <Method name="Persistir" returnType="boolean" visibility="public">
+          <Argument type="boolean" name="editar"/>
+        </Method>
+        <Method name="Remover" returnType="boolean" visibility="public"/>
+        <Method name="getBancas" returnType="ArrayList&lt;Banca&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Professor" package="Model" visibility="public" xPosition="2372.0" yPosition="1098.0">
+      <Fields>
+        <Field name="Nome" type="String" visibility="private"/>
+        <Field name="Email" type="String" visibility="private"/>
+        <Field name="Area" type="String" visibility="private"/>
+        <Field name="Sujestao" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Nome"/>
+          <Argument type="String" name="Email"/>
+          <Argument type="String" name="Area"/>
+          <Argument type="String" name="Sujestao"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JSONObject" name="json"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="Nome"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="Email"/>
+        </Method>
+        <Method name="getArea" returnType="String" visibility="public"/>
+        <Method name="setArea" returnType="void" visibility="public">
+          <Argument type="String" name="Area"/>
+        </Method>
+        <Method name="getSujestao" returnType="String" visibility="public"/>
+        <Method name="setSujestao" returnType="void" visibility="public">
+          <Argument type="String" name="Sujestao"/>
+        </Method>
+        <Method name="toJson" returnType="JSONObject" visibility="public"/>
+        <Method name="Persistir" returnType="boolean" visibility="public">
+          <Argument type="boolean" name="editar"/>
+        </Method>
+        <Method name="Remover" returnType="boolean" visibility="public"/>
+        <Method name="getProfessores" returnType="ArrayList&lt;Professor&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="PropostaTC" package="Model" visibility="public" xPosition="867.0" yPosition="2252.0">
+      <Fields>
+        <Field name="Titulo" type="String" visibility="private"/>
+        <Field name="Autor" type="String" visibility="private"/>
+        <Field name="Orientador" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Titulo"/>
+          <Argument type="String" name="Autor"/>
+          <Argument type="String" name="Orientador"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JSONObject" name="json"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="Titulo"/>
+        </Method>
+        <Method name="getAutor" returnType="String" visibility="public"/>
+        <Method name="setAutor" returnType="void" visibility="public">
+          <Argument type="String" name="Autor"/>
+        </Method>
+        <Method name="getOrientador" returnType="String" visibility="public"/>
+        <Method name="setOrientador" returnType="void" visibility="public">
+          <Argument type="String" name="Orientador"/>
+        </Method>
+        <Method name="toJson" returnType="JSONObject" visibility="public"/>
+        <Method name="Persistir" returnType="boolean" visibility="public">
+          <Argument type="boolean" name="editar"/>
+        </Method>
+        <Method name="Remover" returnType="boolean" visibility="public"/>
+        <Method name="getPropostas" returnType="ArrayList&lt;PropostaTC&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="AlunoTM" package="TableModel" visibility="public" xPosition="461.0" yPosition="4497.0">
+      <Fields>
+        <Field name="linhas" type="List&lt;String[]&gt;" visibility="private"/>
+        <Field name="colunas" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="lista"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColumnCount" returnType="int" visibility="public"/>
+        <Method name="getRowCount" returnType="int" visibility="public"/>
+        <Method name="getColumnName" returnType="String" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getColumnClass" returnType="Class&lt;?&gt;" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getValueAt" returnType="Object" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="//modifica na linha e coluna especificada void" visibility="public">
+          <Argument type="Object" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="void" visibility="public">
+          <Argument type="String" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+        </Method>
+        <Method name="isCellEditable" returnType="boolean" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getAluno" returnType="String[]" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addAluno" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addLista" returnType="void" visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="a"/>
+        </Method>
+        <Method name="limpar" returnType="void" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AvaliacaoTM" package="TableModel" visibility="public" xPosition="2274.0" yPosition="5175.0">
+      <Fields>
+        <Field name="linhas" type="List&lt;String[]&gt;" visibility="private"/>
+        <Field name="colunas" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="lista"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRowCount" returnType="int" visibility="public"/>
+        <Method name="getColumnCount" returnType="int" visibility="public"/>
+        <Method name="getColumnName" returnType="String" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getColumnClass" returnType="Class&lt;?&gt;" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getValueAt" returnType="Object" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="//modifica na linha e coluna especificada void" visibility="public">
+          <Argument type="Object" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="void" visibility="public">
+          <Argument type="String" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+        </Method>
+        <Method name="isCellEditable" returnType="boolean" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getAvaliacao" returnType="String[]" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addAvaliacao" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addLista" returnType="void" visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="a"/>
+        </Method>
+        <Method name="limpar" returnType="void" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BancaTM" package="TableModel" visibility="public" xPosition="2274.0" yPosition="3226.0">
+      <Fields>
+        <Field name="linhas" type="List&lt;String[]&gt;" visibility="private"/>
+        <Field name="colunas" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="lista"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRowCount" returnType="int" visibility="public"/>
+        <Method name="getColumnCount" returnType="int" visibility="public"/>
+        <Method name="getColumnName" returnType="String" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getColumnClass" returnType="Class&lt;?&gt;" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getValueAt" returnType="Object" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="//modifica na linha e coluna especificada void" visibility="public">
+          <Argument type="Object" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="void" visibility="public">
+          <Argument type="String" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+        </Method>
+        <Method name="isCellEditable" returnType="boolean" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getBanca" returnType="String[]" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addBanca" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addLista" returnType="void" visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="a"/>
+        </Method>
+        <Method name="limpar" returnType="void" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ProfessorTM" package="TableModel" visibility="public" xPosition="2274.0" yPosition="4295.0">
+      <Fields>
+        <Field name="linhas" type="List&lt;String[]&gt;" visibility="private"/>
+        <Field name="colunas" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="lista"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRowCount" returnType="int" visibility="public"/>
+        <Method name="getColumnCount" returnType="int" visibility="public"/>
+        <Method name="getColumnName" returnType="String" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getColumnClass" returnType="Class&lt;?&gt;" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getValueAt" returnType="Object" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="//modifica na linha e coluna especificada void" visibility="public">
+          <Argument type="Object" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="void" visibility="public">
+          <Argument type="String" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+        </Method>
+        <Method name="isCellEditable" returnType="boolean" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getProfessor" returnType="String[]" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addprofessor" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addLista" returnType="void" visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="a"/>
+        </Method>
+        <Method name="limpar" returnType="void" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PropostaTCTM" package="TableModel" visibility="public" xPosition="478.0" yPosition="3722.0">
+      <Fields>
+        <Field name="linhas" type="List&lt;String[]&gt;" visibility="private"/>
+        <Field name="colunas" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="lista"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRowCount" returnType="int" visibility="public"/>
+        <Method name="getColumnCount" returnType="int" visibility="public"/>
+        <Method name="getColumnName" returnType="String" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getColumnClass" returnType="Class&lt;?&gt;" visibility="public">
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getValueAt" returnType="Object" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="//modifica na linha e coluna especificada void" visibility="public">
+          <Argument type="Object" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="setValueAt" returnType="void" visibility="public">
+          <Argument type="String" name="aValue"/>
+          <Argument type="int" name="rowIndex"/>
+        </Method>
+        <Method name="isCellEditable" returnType="boolean" visibility="public">
+          <Argument type="int" name="rowIndex"/>
+          <Argument type="int" name="columnIndex"/>
+        </Method>
+        <Method name="getPropostaTC" returnType="String[]" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addPropostaTC" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indiceLinha"/>
+        </Method>
+        <Method name="addLista" returnType="void" visibility="public">
+          <Argument type="List&lt;String[]&gt;" name="a"/>
+        </Method>
+        <Method name="limpar" returnType="void" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ArquivoAluno" package="Util" visibility="public" xPosition="772.0" yPosition="1301.0">
+      <Fields>
+        <Field name="Caminho" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Read" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="Write" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Texto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ArquivoAvaliacao" package="Util" visibility="public" xPosition="772.0" yPosition="745.0">
+      <Fields>
+        <Field name="Caminho" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Read" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="Write" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Texto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ArquivoBanca" package="Util" visibility="public" xPosition="772.0" yPosition="1116.0">
+      <Fields>
+        <Field name="Caminho" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Read" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="Write" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Texto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ArquivoProfessor" package="Util" visibility="public" xPosition="772.0" yPosition="921.0">
+      <Fields>
+        <Field name="Caminho" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Read" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="Write" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Texto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ArquivoPropostaTC" package="Util" visibility="public" xPosition="772.0" yPosition="1485.0">
+      <Fields>
+        <Field name="Caminho" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Read" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="Write" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Texto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Crud" package="View" visibility="public" xPosition="1336.0" yPosition="3042.0">
+      <Fields>
+        <Field name="editar_aluno" type="boolean" visibility="package"/>
+        <Field name="editar_avaliacao" type="boolean" visibility="package"/>
+        <Field name="editar_banca" type="boolean" visibility="package"/>
+        <Field name="editar_professor" type="boolean" visibility="package"/>
+        <Field name="editar_proposta" type="boolean" visibility="package"/>
+        <Field name="ModeloAvaliacao" type="AvaliacaoTM" visibility="package"/>
+        <Field name="ModeloAluno" type="AlunoTM" visibility="package"/>
+        <Field name="ModeloBanca" type="BancaTM" visibility="package"/>
+        <Field name="ModeloProfessor" type="ProfessorTM" visibility="package"/>
+        <Field name="ModeloPropostaTC" type="PropostaTCTM" visibility="package"/>
+        <Field name="btn_cancelar_aluno" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_cancelar_avaliacao" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_cancelar_banca" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_cancelar_professor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_cancelar_propostatc" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_editar_aluno" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_editar_avaliacao" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_editar_banca" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_editar_professor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_editar_propostatc" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_excluir_aluno" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_excluir_avaliacao" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_excluir_banca" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_excluir_professor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_excluir_propostatc" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_novo_aluno" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_novo_avaliacao" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_novo_banca" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_novo_professor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_novo_propostatc" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_salvar_aluno" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_salvar_avaliacao" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_salvar_banca" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_salvar_professor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_salvar_propostatc" type="javax.swing.JButton" visibility="private"/>
+        <Field name="c_area_professor" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_email_aluno" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_email_professor" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_idbanca_banca" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_matricula_aluno" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_matricula_avaliacao" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_nome_aluno" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_nome_professor" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_nota_avaliacao" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_sujestao_professor" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_tel_aluno" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="c_titulo_propostatc" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="cb_autor_propostatc" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_avaliadorII_banca" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_avaliadorI_banca" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_idbanca_avaliacao" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_orientador_banca" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_orientador_propostatc" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel5" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel6" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane3" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane4" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane5" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTabbedPane1" type="javax.swing.JTabbedPane" visibility="private"/>
+        <Field name="lbl_area_professor" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_autor_propostatc" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_avaliadorII_banca" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_avaliadorI_banca" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_email_aluno" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_email_professor" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_idbanca_avaliacao" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_idbanca_banca" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_matricula_aluno" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_matricula_avaliacao" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_nome_aluno" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_nome_professor" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_nota_avaliacao" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_orientador_banca" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_orientador_propostatc" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_sujestao_professor" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_tel_aluno" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_titulo_propostatc" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="pnl_aluno" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pnl_avaliacao" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pnl_banca" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pnl_professor" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pnl_propostatc" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tbl_aluno" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tbl_avaliacao" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tbl_banca" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tbl_professor" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tbl_propostatc" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="LoadTable" returnType="void" visibility="public"/>
+        <Method name="LoadCBAutor" returnType="void" visibility="public"/>
+        <Method name="LoadCBOrientador" returnType="void" visibility="public"/>
+        <Method name="LoadCBAvaliadorI" returnType="void" visibility="public"/>
+        <Method name="LoadCBAvaliadorII" returnType="void" visibility="public"/>
+        <Method name="LoadCBOrientador_banca" returnType="void" visibility="public"/>
+        <Method name="LoadCBIdbanca" returnType="void" visibility="public"/>
+        <Method name="BotoesAluno" returnType="void" visibility="public">
+          <Argument type="boolean" name="N"/>
+          <Argument type="boolean" name="E"/>
+          <Argument type="boolean" name="R"/>
+          <Argument type="boolean" name="S"/>
+          <Argument type="boolean" name="C"/>
+        </Method>
+        <Method name="BotoesAvaliacao" returnType="void" visibility="public">
+          <Argument type="boolean" name="N"/>
+          <Argument type="boolean" name="E"/>
+          <Argument type="boolean" name="R"/>
+          <Argument type="boolean" name="S"/>
+          <Argument type="boolean" name="C"/>
+        </Method>
+        <Method name="BotoesBanca" returnType="void" visibility="public">
+          <Argument type="boolean" name="N"/>
+          <Argument type="boolean" name="E"/>
+          <Argument type="boolean" name="R"/>
+          <Argument type="boolean" name="S"/>
+          <Argument type="boolean" name="C"/>
+        </Method>
+        <Method name="BotoesProfessor" returnType="void" visibility="public">
+          <Argument type="boolean" name="N"/>
+          <Argument type="boolean" name="E"/>
+          <Argument type="boolean" name="R"/>
+          <Argument type="boolean" name="S"/>
+          <Argument type="boolean" name="C"/>
+        </Method>
+        <Method name="BotoesPropostaTC" returnType="void" visibility="public">
+          <Argument type="boolean" name="N"/>
+          <Argument type="boolean" name="E"/>
+          <Argument type="boolean" name="R"/>
+          <Argument type="boolean" name="S"/>
+          <Argument type="boolean" name="C"/>
+        </Method>
+        <Method name="CamposAluno" returnType="void" visibility="public"/>
+        <Method name="CamposAvaliacao" returnType="void" visibility="public"/>
+        <Method name="CamposBanca" returnType="void" visibility="public"/>
+        <Method name="CamposProfessor" returnType="void" visibility="public"/>
+        <Method name="CamposPropostaTC" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="tbl_alunoMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_novo_alunoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_editar_alunoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_excluir_alunoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_salvar_alunoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_cancelar_alunoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tbl_avaliacaoMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_novo_avaliacaoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_editar_avaliacaoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_excluir_avaliacaoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_salvar_avaliacaoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_cancelar_avaliacaoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tbl_bancaMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_novo_bancaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_editar_bancaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_excluir_bancaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_salvar_bancaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_cancelar_bancaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tbl_professorMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_novo_professorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_editar_professorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_excluir_professorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_salvar_professorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_cancelar_professorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tbl_propostatcMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_novo_propostatcActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_editar_propostatcActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_excluir_propostatcActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_salvar_propostatcActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cb_autor_propostatcActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="JSONString" package="json" visibility="public" xPosition="800.0" yPosition="403.0">
+      <Methods>
+        <Method name="toJSONString" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="json.JSONObject" target="json.JSONArray" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="json.JSONArray" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="stack" source="json.JSONWriter" target="json.JSONObject" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Professor" target="Model.Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Avaliacao" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Banca" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.PropostaTC" target="Model.PropostaTC" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Aluno" target="Model.Aluno" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="json.JSONException" target="json.JSONTokener" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="json.JSONObject" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="json.JSONStringer" target="json.JSONWriter"/>
+    <UseRelation source="Model.PropostaTC" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Banca" target="Model.Banca" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="json.JSONArray" target="json.JSONArray" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="json.JSONWriter" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Professor" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ModeloBanca" source="View.Crud" target="TableModel.BancaTM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Aluno" target="json.JSONObject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ModeloPropostaTC" source="View.Crud" target="TableModel.PropostaTCTM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="json.JSONWriter" target="json.JSONWriter" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ModeloAluno" source="View.Crud" target="TableModel.AlunoTM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ModeloAvaliacao" source="View.Crud" target="TableModel.AvaliacaoTM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Avaliacao" target="Model.Avaliacao" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ModeloProfessor" source="View.Crud" target="TableModel.ProfessorTM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

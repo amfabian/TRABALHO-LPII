@@ -259,38 +259,6 @@ public class Crud extends javax.swing.JFrame {
         c_tel_aluno = new javax.swing.JTextField();
         btn_salvar_aluno = new javax.swing.JButton();
         btn_cancelar_aluno = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tbl_avaliacao = new javax.swing.JTable();
-        btn_novo_avaliacao = new javax.swing.JButton();
-        btn_editar_avaliacao = new javax.swing.JButton();
-        btn_excluir_avaliacao = new javax.swing.JButton();
-        pnl_avaliacao = new javax.swing.JPanel();
-        lbl_idbanca_avaliacao = new javax.swing.JLabel();
-        lbl_matricula_avaliacao = new javax.swing.JLabel();
-        c_matricula_avaliacao = new javax.swing.JTextField();
-        lbl_nota_avaliacao = new javax.swing.JLabel();
-        c_nota_avaliacao = new javax.swing.JTextField();
-        btn_salvar_avaliacao = new javax.swing.JButton();
-        btn_cancelar_avaliacao = new javax.swing.JButton();
-        cb_idbanca_avaliacao = new javax.swing.JComboBox<>();
-        jPanel4 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        tbl_banca = new javax.swing.JTable();
-        btn_novo_banca = new javax.swing.JButton();
-        btn_editar_banca = new javax.swing.JButton();
-        btn_excluir_banca = new javax.swing.JButton();
-        pnl_banca = new javax.swing.JPanel();
-        lbl_avaliadorI_banca = new javax.swing.JLabel();
-        lbl_avaliadorII_banca = new javax.swing.JLabel();
-        lbl_orientador_banca = new javax.swing.JLabel();
-        lbl_idbanca_banca = new javax.swing.JLabel();
-        c_idbanca_banca = new javax.swing.JTextField();
-        btn_salvar_banca = new javax.swing.JButton();
-        btn_cancelar_banca = new javax.swing.JButton();
-        cb_avaliadorI_banca = new javax.swing.JComboBox<>();
-        cb_avaliadorII_banca = new javax.swing.JComboBox<>();
-        cb_orientador_banca = new javax.swing.JComboBox<>();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tbl_professor = new javax.swing.JTable();
@@ -323,6 +291,38 @@ public class Crud extends javax.swing.JFrame {
         btn_cancelar_propostatc = new javax.swing.JButton();
         cb_autor_propostatc = new javax.swing.JComboBox<>();
         cb_orientador_propostatc = new javax.swing.JComboBox<>();
+        jPanel4 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tbl_banca = new javax.swing.JTable();
+        btn_novo_banca = new javax.swing.JButton();
+        btn_editar_banca = new javax.swing.JButton();
+        btn_excluir_banca = new javax.swing.JButton();
+        pnl_banca = new javax.swing.JPanel();
+        lbl_avaliadorI_banca = new javax.swing.JLabel();
+        lbl_avaliadorII_banca = new javax.swing.JLabel();
+        lbl_orientador_banca = new javax.swing.JLabel();
+        lbl_idbanca_banca = new javax.swing.JLabel();
+        c_idbanca_banca = new javax.swing.JTextField();
+        btn_salvar_banca = new javax.swing.JButton();
+        btn_cancelar_banca = new javax.swing.JButton();
+        cb_avaliadorI_banca = new javax.swing.JComboBox<>();
+        cb_avaliadorII_banca = new javax.swing.JComboBox<>();
+        cb_orientador_banca = new javax.swing.JComboBox<>();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tbl_avaliacao = new javax.swing.JTable();
+        btn_novo_avaliacao = new javax.swing.JButton();
+        btn_editar_avaliacao = new javax.swing.JButton();
+        btn_excluir_avaliacao = new javax.swing.JButton();
+        pnl_avaliacao = new javax.swing.JPanel();
+        lbl_idbanca_avaliacao = new javax.swing.JLabel();
+        lbl_matricula_avaliacao = new javax.swing.JLabel();
+        c_matricula_avaliacao = new javax.swing.JTextField();
+        lbl_nota_avaliacao = new javax.swing.JLabel();
+        c_nota_avaliacao = new javax.swing.JTextField();
+        btn_salvar_avaliacao = new javax.swing.JButton();
+        btn_cancelar_avaliacao = new javax.swing.JButton();
+        cb_idbanca_avaliacao = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -402,31 +402,29 @@ public class Crud extends javax.swing.JFrame {
         pnl_alunoLayout.setHorizontalGroup(
             pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_alunoLayout.createSequentialGroup()
-                .addGroup(pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnl_alunoLayout.createSequentialGroup()
                         .addComponent(lbl_nome_aluno)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(c_nome_aluno, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(c_nome_aluno, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnl_alunoLayout.createSequentialGroup()
                         .addComponent(lbl_matricula_aluno)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(c_matricula_aluno, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(c_matricula_aluno)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_alunoLayout.createSequentialGroup()
-                        .addComponent(lbl_email_aluno)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(c_email_aluno))
-                    .addGroup(pnl_alunoLayout.createSequentialGroup()
-                        .addComponent(lbl_tel_aluno)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(c_tel_aluno))))
+                    .addComponent(lbl_email_aluno, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbl_tel_aluno, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(c_tel_aluno, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
+                    .addComponent(c_email_aluno)))
             .addGroup(pnl_alunoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(83, 83, 83)
                 .addComponent(btn_salvar_aluno)
-                .addGap(64, 64, 64)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_cancelar_aluno)
-                .addGap(106, 106, 106))
+                .addGap(72, 72, 72))
         );
         pnl_alunoLayout.setVerticalGroup(
             pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -445,8 +443,8 @@ public class Crud extends javax.swing.JFrame {
                     .addComponent(c_tel_aluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addGroup(pnl_alunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_salvar_aluno)
-                    .addComponent(btn_cancelar_aluno))
+                    .addComponent(btn_cancelar_aluno)
+                    .addComponent(btn_salvar_aluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -456,20 +454,20 @@ public class Crud extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnl_aluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(30, 30, 30)
                 .addComponent(btn_novo_aluno)
-                .addGap(100, 100, 100)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_editar_aluno)
-                .addGap(92, 92, 92)
+                .addGap(169, 169, 169)
                 .addComponent(btn_excluir_aluno)
-                .addGap(0, 38, Short.MAX_VALUE))
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(26, 26, 26))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_novo_aluno)
                     .addComponent(btn_editar_aluno)
@@ -480,345 +478,6 @@ public class Crud extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Alunos", jPanel1);
-
-        tbl_avaliacao.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID Banca", "Matrícula", "Nota"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tbl_avaliacao.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tbl_avaliacaoMouseClicked(evt);
-            }
-        });
-        jScrollPane2.setViewportView(tbl_avaliacao);
-
-        btn_novo_avaliacao.setText("Novo");
-        btn_novo_avaliacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_novo_avaliacaoActionPerformed(evt);
-            }
-        });
-
-        btn_editar_avaliacao.setText("Editar");
-        btn_editar_avaliacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_editar_avaliacaoActionPerformed(evt);
-            }
-        });
-
-        btn_excluir_avaliacao.setText("Excluir");
-        btn_excluir_avaliacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_excluir_avaliacaoActionPerformed(evt);
-            }
-        });
-
-        pnl_avaliacao.setBorder(javax.swing.BorderFactory.createTitledBorder("Avaliação"));
-
-        lbl_idbanca_avaliacao.setText("ID Banca:");
-
-        lbl_matricula_avaliacao.setText("Matrícula:");
-
-        lbl_nota_avaliacao.setText("Nota:");
-
-        btn_salvar_avaliacao.setText("Salvar");
-        btn_salvar_avaliacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salvar_avaliacaoActionPerformed(evt);
-            }
-        });
-
-        btn_cancelar_avaliacao.setText("Cancelar");
-        btn_cancelar_avaliacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_cancelar_avaliacaoActionPerformed(evt);
-            }
-        });
-
-        cb_idbanca_avaliacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb_idbanca_avaliacaoActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnl_avaliacaoLayout = new javax.swing.GroupLayout(pnl_avaliacao);
-        pnl_avaliacao.setLayout(pnl_avaliacaoLayout);
-        pnl_avaliacaoLayout.setHorizontalGroup(
-            pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_avaliacaoLayout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(btn_salvar_avaliacao)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_cancelar_avaliacao)
-                .addGap(69, 69, 69))
-            .addGroup(pnl_avaliacaoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_matricula_avaliacao)
-                    .addComponent(lbl_nota_avaliacao)
-                    .addComponent(lbl_idbanca_avaliacao))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cb_idbanca_avaliacao, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(c_matricula_avaliacao)
-                    .addComponent(c_nota_avaliacao))
-                .addContainerGap())
-        );
-        pnl_avaliacaoLayout.setVerticalGroup(
-            pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_avaliacaoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_idbanca_avaliacao)
-                    .addComponent(cb_idbanca_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_matricula_avaliacao)
-                    .addComponent(c_matricula_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_nota_avaliacao)
-                    .addComponent(c_nota_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
-                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_salvar_avaliacao)
-                    .addComponent(btn_cancelar_avaliacao))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 38, Short.MAX_VALUE)
-                        .addComponent(btn_novo_avaliacao)
-                        .addGap(100, 100, 100)
-                        .addComponent(btn_editar_avaliacao)
-                        .addGap(64, 64, 64)
-                        .addComponent(btn_excluir_avaliacao)
-                        .addGap(54, 54, 54))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pnl_avaliacao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_novo_avaliacao)
-                    .addComponent(btn_editar_avaliacao)
-                    .addComponent(btn_excluir_avaliacao))
-                .addGap(18, 18, 18)
-                .addComponent(pnl_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
-        );
-
-        jTabbedPane1.addTab("Avaliações", jPanel3);
-
-        tbl_banca.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "ID Banca", "Orientador", "Avaliador I", "Avaliador II"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tbl_banca.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tbl_bancaMouseClicked(evt);
-            }
-        });
-        jScrollPane3.setViewportView(tbl_banca);
-
-        btn_novo_banca.setText("Novo");
-        btn_novo_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_novo_bancaActionPerformed(evt);
-            }
-        });
-
-        btn_editar_banca.setText("Editar");
-        btn_editar_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_editar_bancaActionPerformed(evt);
-            }
-        });
-
-        btn_excluir_banca.setText("Excluir");
-        btn_excluir_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_excluir_bancaActionPerformed(evt);
-            }
-        });
-
-        pnl_banca.setBorder(javax.swing.BorderFactory.createTitledBorder("Banca"));
-
-        lbl_avaliadorI_banca.setText("Avaliador I:");
-
-        lbl_avaliadorII_banca.setText("Avaliador II:");
-
-        lbl_orientador_banca.setText("Orientador:");
-
-        lbl_idbanca_banca.setText("ID Banca:");
-
-        btn_salvar_banca.setText("Salvar");
-        btn_salvar_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salvar_bancaActionPerformed(evt);
-            }
-        });
-
-        btn_cancelar_banca.setText("Cancelar");
-        btn_cancelar_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_cancelar_bancaActionPerformed(evt);
-            }
-        });
-
-        cb_avaliadorI_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb_avaliadorI_bancaActionPerformed(evt);
-            }
-        });
-
-        cb_orientador_banca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb_orientador_bancaActionPerformed(evt);
-            }
-        });
-        cb_orientador_banca.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                cb_orientador_bancaPropertyChange(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnl_bancaLayout = new javax.swing.GroupLayout(pnl_banca);
-        pnl_banca.setLayout(pnl_bancaLayout);
-        pnl_bancaLayout.setHorizontalGroup(
-            pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_bancaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_bancaLayout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(btn_salvar_banca)
-                        .addGap(74, 74, 74)
-                        .addComponent(btn_cancelar_banca)
-                        .addContainerGap(98, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_bancaLayout.createSequentialGroup()
-                        .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl_bancaLayout.createSequentialGroup()
-                                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lbl_avaliadorI_banca)
-                                    .addComponent(lbl_avaliadorII_banca))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cb_avaliadorI_banca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(cb_avaliadorII_banca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(pnl_bancaLayout.createSequentialGroup()
-                                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lbl_orientador_banca)
-                                    .addComponent(lbl_idbanca_banca))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(pnl_bancaLayout.createSequentialGroup()
-                                        .addComponent(c_idbanca_banca, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(cb_orientador_banca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(18, 18, 18))))
-        );
-        pnl_bancaLayout.setVerticalGroup(
-            pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_bancaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_idbanca_banca)
-                    .addComponent(c_idbanca_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb_orientador_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_orientador_banca))
-                .addGap(18, 18, 18)
-                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb_avaliadorI_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_avaliadorI_banca))
-                .addGap(18, 18, 18)
-                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb_avaliadorII_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_avaliadorII_banca))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_salvar_banca)
-                    .addComponent(btn_cancelar_banca))
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnl_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(btn_novo_banca)
-                        .addGap(112, 112, 112)
-                        .addComponent(btn_editar_banca)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_excluir_banca)
-                        .addGap(42, 42, 42))))
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 463, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_novo_banca)
-                    .addComponent(btn_editar_banca)
-                    .addComponent(btn_excluir_banca))
-                .addGap(18, 18, 18)
-                .addComponent(pnl_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        jTabbedPane1.addTab("Bancas", jPanel4);
 
         tbl_professor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -899,10 +558,6 @@ public class Crud extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(pnl_professorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnl_professorLayout.createSequentialGroup()
-                        .addComponent(lbl_sujestao_professor)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(c_sujestao_professor))
-                    .addGroup(pnl_professorLayout.createSequentialGroup()
                         .addComponent(lbl_area_professor)
                         .addGap(23, 23, 23)
                         .addComponent(c_area_professor))
@@ -916,11 +571,15 @@ public class Crud extends javax.swing.JFrame {
                         .addComponent(c_nome_professor)
                         .addGap(1, 1, 1))
                     .addGroup(pnl_professorLayout.createSequentialGroup()
-                        .addGap(50, 50, 50)
+                        .addComponent(lbl_sujestao_professor)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(c_sujestao_professor))
+                    .addGroup(pnl_professorLayout.createSequentialGroup()
+                        .addGap(72, 72, 72)
                         .addComponent(btn_salvar_professor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_cancelar_professor)
-                        .addGap(62, 62, 62)))
+                        .addGap(65, 65, 65)))
                 .addContainerGap())
         );
         pnl_professorLayout.setVerticalGroup(
@@ -958,22 +617,22 @@ public class Crud extends javax.swing.JFrame {
                 .addComponent(pnl_professor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
+                .addGap(41, 41, 41)
                 .addComponent(btn_novo_professor)
-                .addGap(67, 67, 67)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_editar_professor)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                .addGap(158, 158, 158)
                 .addComponent(btn_excluir_professor)
-                .addGap(35, 35, 35))
+                .addGap(28, 28, 28))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_novo_professor)
                     .addComponent(btn_editar_professor)
@@ -1071,12 +730,12 @@ public class Crud extends javax.swing.JFrame {
                         .addComponent(lbl_orientador_propostatc)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pnl_propostatcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cb_orientador_propostatc, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(pnl_propostatcLayout.createSequentialGroup()
                                 .addComponent(btn_salvar_propostatc)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btn_cancelar_propostatc)
-                                .addGap(52, 52, 52))
-                            .addComponent(cb_orientador_propostatc, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(65, 65, 65))))
                     .addGroup(pnl_propostatcLayout.createSequentialGroup()
                         .addComponent(lbl_autor_propostatc)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1120,20 +779,20 @@ public class Crud extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(btn_novo_propostatc)
-                .addGap(98, 98, 98)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_editar_propostatc)
-                .addGap(91, 91, 91)
+                .addGap(167, 167, 167)
                 .addComponent(btn_excluir_propostatc)
-                .addGap(0, 38, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_novo_propostatc)
                     .addComponent(btn_editar_propostatc)
@@ -1144,6 +803,342 @@ public class Crud extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Propostas", jPanel6);
+
+        tbl_banca.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "ID Banca", "Orientador", "Avaliador I", "Avaliador II"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tbl_banca.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbl_bancaMouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(tbl_banca);
+
+        btn_novo_banca.setText("Novo");
+        btn_novo_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_novo_bancaActionPerformed(evt);
+            }
+        });
+
+        btn_editar_banca.setText("Editar");
+        btn_editar_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_editar_bancaActionPerformed(evt);
+            }
+        });
+
+        btn_excluir_banca.setText("Excluir");
+        btn_excluir_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_excluir_bancaActionPerformed(evt);
+            }
+        });
+
+        pnl_banca.setBorder(javax.swing.BorderFactory.createTitledBorder("Banca"));
+
+        lbl_avaliadorI_banca.setText("Avaliador I:");
+
+        lbl_avaliadorII_banca.setText("Avaliador II:");
+
+        lbl_orientador_banca.setText("Orientador:");
+
+        lbl_idbanca_banca.setText("ID Banca:");
+
+        btn_salvar_banca.setText("Salvar");
+        btn_salvar_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_salvar_bancaActionPerformed(evt);
+            }
+        });
+
+        btn_cancelar_banca.setText("Cancelar");
+        btn_cancelar_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cancelar_bancaActionPerformed(evt);
+            }
+        });
+
+        cb_avaliadorI_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_avaliadorI_bancaActionPerformed(evt);
+            }
+        });
+
+        cb_orientador_banca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_orientador_bancaActionPerformed(evt);
+            }
+        });
+        cb_orientador_banca.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                cb_orientador_bancaPropertyChange(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_bancaLayout = new javax.swing.GroupLayout(pnl_banca);
+        pnl_banca.setLayout(pnl_bancaLayout);
+        pnl_bancaLayout.setHorizontalGroup(
+            pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_bancaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnl_bancaLayout.createSequentialGroup()
+                        .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_orientador_banca)
+                            .addComponent(lbl_idbanca_banca))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnl_bancaLayout.createSequentialGroup()
+                                .addComponent(c_idbanca_banca, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(cb_orientador_banca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl_bancaLayout.createSequentialGroup()
+                        .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_avaliadorI_banca)
+                            .addComponent(lbl_avaliadorII_banca))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnl_bancaLayout.createSequentialGroup()
+                                .addComponent(btn_salvar_banca)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_cancelar_banca)
+                                .addGap(68, 68, 68))
+                            .addComponent(cb_avaliadorI_banca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cb_avaliadorII_banca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(18, 18, 18))
+        );
+        pnl_bancaLayout.setVerticalGroup(
+            pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_bancaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_idbanca_banca)
+                    .addComponent(c_idbanca_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cb_orientador_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_orientador_banca))
+                .addGap(18, 18, 18)
+                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cb_avaliadorI_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_avaliadorI_banca))
+                .addGap(18, 18, 18)
+                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cb_avaliadorII_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_avaliadorII_banca))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addGroup(pnl_bancaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_salvar_banca)
+                    .addComponent(btn_cancelar_banca))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(btn_novo_banca)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_editar_banca)
+                .addGap(173, 173, 173)
+                .addComponent(btn_excluir_banca)
+                .addGap(22, 22, 22))
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(pnl_banca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_novo_banca)
+                    .addComponent(btn_editar_banca)
+                    .addComponent(btn_excluir_banca))
+                .addGap(18, 18, 18)
+                .addComponent(pnl_banca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Bancas", jPanel4);
+
+        tbl_avaliacao.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Banca", "Matrícula", "Nota"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tbl_avaliacao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbl_avaliacaoMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tbl_avaliacao);
+
+        btn_novo_avaliacao.setText("Novo");
+        btn_novo_avaliacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_novo_avaliacaoActionPerformed(evt);
+            }
+        });
+
+        btn_editar_avaliacao.setText("Editar");
+        btn_editar_avaliacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_editar_avaliacaoActionPerformed(evt);
+            }
+        });
+
+        btn_excluir_avaliacao.setText("Excluir");
+        btn_excluir_avaliacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_excluir_avaliacaoActionPerformed(evt);
+            }
+        });
+
+        pnl_avaliacao.setBorder(javax.swing.BorderFactory.createTitledBorder("Avaliação"));
+
+        lbl_idbanca_avaliacao.setText("ID Banca:");
+
+        lbl_matricula_avaliacao.setText("Matrícula:");
+
+        lbl_nota_avaliacao.setText("Nota:");
+
+        btn_salvar_avaliacao.setText("Salvar");
+        btn_salvar_avaliacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_salvar_avaliacaoActionPerformed(evt);
+            }
+        });
+
+        btn_cancelar_avaliacao.setText("Cancelar");
+        btn_cancelar_avaliacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cancelar_avaliacaoActionPerformed(evt);
+            }
+        });
+
+        cb_idbanca_avaliacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_idbanca_avaliacaoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_avaliacaoLayout = new javax.swing.GroupLayout(pnl_avaliacao);
+        pnl_avaliacao.setLayout(pnl_avaliacaoLayout);
+        pnl_avaliacaoLayout.setHorizontalGroup(
+            pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_avaliacaoLayout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addComponent(btn_salvar_avaliacao)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_cancelar_avaliacao)
+                .addGap(28, 28, 28))
+            .addGroup(pnl_avaliacaoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_matricula_avaliacao)
+                    .addComponent(lbl_nota_avaliacao)
+                    .addComponent(lbl_idbanca_avaliacao))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cb_idbanca_avaliacao, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(c_matricula_avaliacao)
+                    .addComponent(c_nota_avaliacao))
+                .addContainerGap())
+        );
+        pnl_avaliacaoLayout.setVerticalGroup(
+            pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_avaliacaoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_idbanca_avaliacao)
+                    .addComponent(cb_idbanca_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_matricula_avaliacao)
+                    .addComponent(c_matricula_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_nota_avaliacao)
+                    .addComponent(c_nota_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(pnl_avaliacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_salvar_avaliacao)
+                    .addComponent(btn_cancelar_avaliacao))
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pnl_avaliacao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 573, Short.MAX_VALUE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(btn_novo_avaliacao)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_editar_avaliacao)
+                        .addGap(161, 161, 161)
+                        .addComponent(btn_excluir_avaliacao)
+                        .addGap(22, 22, 22)))
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_novo_avaliacao)
+                    .addComponent(btn_editar_avaliacao)
+                    .addComponent(btn_excluir_avaliacao))
+                .addGap(18, 18, 18)
+                .addComponent(pnl_avaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
+        );
+
+        jTabbedPane1.addTab("Avaliações", jPanel3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
