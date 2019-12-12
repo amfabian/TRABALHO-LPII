@@ -3,8 +3,10 @@
 Projeto da cadeira de Linguagem de Programação II <br>
 Professora Karen Borges <br>
 Alunos: Alexandre de Mesquita Fabian, Gabriel, Dafne
-
 <p>
+ 
+ ### Atenção: Arquivo Manual Projeto LPII.pdf está mais detalhado e com imagens do sistema!
+ <p>
 O projeto consiste em um gerenciador para os alunos, professores, propostas de trabalhos, bancas avaliadores e avaliações 
 para os trabalhos de conclusao (TC) do curso Técnologo em Sistemas para Internet do Instituto Federal do Rio Grande do Sul - Porto Alegre
 
