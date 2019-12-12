@@ -80,25 +80,20 @@ public class Banca {
         if(!base.isEmpty() && base.length()>5)
             jA = new JSONArray(base);
         
-        System.out.println("jA antes da inserção: " + jA); //JSONs no arquivo
-        System.out.println("jA tamanho:  " + jA.length());
+       
         if (jA.isNull(0)){
-           System.out.println("jA VAZIO - PRIMEIRA INSERçAO");
            jA.put(json);
        }else {
            // verifica se o arquivo esta vazio
-            System.out.println("GET : " + jA.getJSONObject(0).getInt("idbanca"));
        
             //caso o arquivo nao esteja vazio, procura por matricula repetida e impede a insercao
             boolean achou = false;
             int i = 0;
        
             for(i=0; i <jA.length();i++){
-                if(jA.getJSONObject(i).getInt("idbanca") == json.getInt("idbanca")){
+                if(jA.getJSONObject(i).getString("idbanca").equals(json.getString("idbanca"))){
                 achou = true;
-                System.out.println("achou true");
                 if(editar){
-                   System.out.println("ENTROU NO EDITAR!");
                    jA.put(i, json);
                    ArquivoBanca.Write(jA.toString());
                 }
@@ -109,12 +104,10 @@ public class Banca {
                 return (false||editar);
                 
             } else {
-                System.out.println("jA.get : " + jA.getJSONObject(0).getInt("idbanca"));
-                System.out.println("json.get: " + json.getInt("idbanca"));
+                
                 jA.put(json);
                 }   
        }
-        System.out.println("jA DEPOIS da inserção: " + jA);
         ArquivoBanca.Write(jA.toString());
        
         return true;
@@ -130,7 +123,7 @@ public class Banca {
         if(!base.isEmpty() && base.length()>5) jA = new JSONArray(base);
         
         for(i=0; i <jA.length();i++){
-                if(jA.getJSONObject(i).getInt("idbanca") == json.getInt("idbanca")){
+                if(jA.getJSONObject(i).getString("idbanca").equals(json.getString("idbanca"))){
                     achou = true;
                     break;
                 }                    

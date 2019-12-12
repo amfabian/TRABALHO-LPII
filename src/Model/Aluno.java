@@ -102,7 +102,7 @@ public class Aluno {
        int i = 0;
        
             for(i=0; i <jA.length();i++){
-                if(jA.getJSONObject(i).getInt("matricula") == json.getInt("matricula")){
+                if(jA.getJSONObject(i).getString("matricula").equals(json.getString("matricula"))){
                 achou = true;
                 if(editar_aluno){
                     System.out.println("ENTROU NO EDITAR!");
