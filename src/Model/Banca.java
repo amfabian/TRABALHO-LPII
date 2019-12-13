@@ -71,63 +71,59 @@ public class Banca {
             json.put("idbanca", this.IDBanca);
             return json;
     }
-    
+    //Utilizada inserir e editar os itens e armazená-los em arquivo
     public boolean Persistir(boolean editar){
         JSONObject json = this.toJson();
-        
         String base = ArquivoBanca.Read();
         JSONArray jA = new JSONArray();
         if(!base.isEmpty() && base.length()>5)
             jA = new JSONArray(base);
-        
-       
+        // verifica se o arquivo esta vazio
         if (jA.isNull(0)){
            jA.put(json);
        }else {
-           // verifica se o arquivo esta vazio
-       
-            //caso o arquivo nao esteja vazio, procura por matricula repetida e impede a insercao
+            //caso o arquivo nao esteja vazio, 
+            //procura pela id repetida e impede a insercao caso o usuario nao tenha clicado no botao editar
             boolean achou = false;
             int i = 0;
-       
             for(i=0; i <jA.length();i++){
                 if(jA.getJSONObject(i).getString("idbanca").equals(json.getString("idbanca"))){
-                achou = true;
-                if(editar){
-                   jA.put(i, json);
-                   ArquivoBanca.Write(jA.toString());
-                }
+                    achou = true;
+                    if(editar){
+                        jA.put(i, json);
+                        ArquivoBanca.Write(jA.toString());
+                    }
                 break;
-                } else {achou = false;}}
-            
+                } else {achou = false;}
+            }
             if(achou){
                 return (false||editar);
-                
-            } else {
-                
-                jA.put(json);
+            }   else {
+                    jA.put(json);
                 }   
-       }
-        ArquivoBanca.Write(jA.toString());
-       
+        }
+        //escreve no arquivo
+         ArquivoBanca.Write(jA.toString());
+        //retorna true caso tenha conseguido inserir/editar
         return true;
     }
-    
+    //Utilizada para Remover item do arquivo
     public boolean Remover (){
         boolean achou = false;
         int i = 0;
-               
         JSONObject json = this.toJson();
         String base = ArquivoBanca.Read();
         JSONArray jA = new JSONArray();
+        //Verifica se não está vazio.
         if(!base.isEmpty() && base.length()>5) jA = new JSONArray(base);
-        
+        //Caso não esteja vazio, procura pela id que será removida.
         for(i=0; i <jA.length();i++){
                 if(jA.getJSONObject(i).getString("idbanca").equals(json.getString("idbanca"))){
                     achou = true;
                     break;
                 }                    
         }
+        //caso ache, remove o item.
         if(achou){
             jA.remove(i);
             ArquivoBanca.Write(jA.toString());

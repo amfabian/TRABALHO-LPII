@@ -72,62 +72,63 @@ public class Aluno {
         return json;
     }
     
+    //Utilizada inserir e editar os itens e armazená-los em arquivo
     public boolean Persistir(boolean editar_aluno){
         JSONObject json = this.toJson();
         String base = ArquivoAluno.Read();
         JSONArray jA = new JSONArray();
-        
+
+        // verifica se o arquivo esta vazio
         if(!base.isEmpty() && base.length()>5) 
             jA = new JSONArray(base);
-        
-        //obtem a matricula!
+       // verifica se o JSON esta vazio
        if (jA.isNull(0)){
            jA.put(json);
        }else {
-           // verifica se o arquivo esta vazio
-       
-        //caso o arquivo nao esteja vazio, procura por matricula repetida e impede a insercao
-       boolean achou = false;
-       int i = 0;
-       
+       //caso o arquivo nao esteja vazio, 
+       //procura pela id repetida e impede a insercao caso o usuario nao tenha clicado no botao editar
+            boolean achou = false;
+            int i = 0;
             for(i=0; i <jA.length();i++){
                 if(jA.getJSONObject(i).getString("matricula").equals(json.getString("matricula"))){
-                achou = true;
-                if(editar_aluno){
-                    jA.put(i, json);
-                    ArquivoAluno.Write(jA.toString());
-                }
+                    achou = true;
+                    if(editar_aluno){
+                        jA.put(i, json);
+                        ArquivoAluno.Write(jA.toString());
+                    }   
                 break;
-                } else {achou = false;}}
+                } else {achou = false;}
+            }
             
             if(achou){
                 return (false ||editar_aluno);
                 
-            } else {
+            }   else {
                 jA.put(json);
-                }
+            }
         }
-        
+        //escreve no arquivo
         ArquivoAluno.Write(jA.toString());
+        //retorna true caso tenha conseguido inserir/editar
         return true;
     }
-    
+    //Utilizada para Remover item do arquivo
     public boolean Remover (){
         boolean achou = false;
         int i = 0;
-               
         JSONObject json = this.toJson();
         String base = ArquivoAluno.Read();
         JSONArray jA = new JSONArray();
+        //Verifica se não está vazio.
         if(!base.isEmpty() && base.length()>5) jA = new JSONArray(base);
-        
+        //Caso não esteja vazio, procura pela id que será removida.
         for(i=0; i <jA.length();i++){
                 if(jA.getJSONObject(i).getInt("matricula") == json.getInt("matricula")){
                     achou = true;
                     break;
                 } 
-                                      
         }
+        //caso ache, remove o item.
         if(achou){
             jA.remove(i);
             ArquivoAluno.Write(jA.toString());

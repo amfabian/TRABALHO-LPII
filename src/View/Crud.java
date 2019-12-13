@@ -29,6 +29,7 @@ public class Crud extends javax.swing.JFrame {
     ProfessorTM ModeloProfessor;
     PropostaTCTM ModeloPropostaTC;
     
+//CARREGA AS TABELAS DA INTERFACE
     public void LoadTable(){
         //ALUNO
         ModeloAluno = new AlunoTM(AlunoControl.getAlunos());
@@ -83,73 +84,73 @@ public class Crud extends javax.swing.JFrame {
 
 
     }
+    //Combo boxe do Autor em PropostaTC
     public void LoadCBAutor (){
+        //Remove todos os itens - vale para todos os CB
         cb_autor_propostatc.removeAllItems();
+        //Add "Selecione como primeiro item - vale para todos os CB
         cb_autor_propostatc.addItem("Selecione");
+        //Percorre a lista de alunos já cadastrados e add no cb
          for (int i = 0; i< tbl_aluno.getRowCount();i++){
                cb_autor_propostatc.addItem(tbl_aluno.getValueAt(i, 1).toString());
            }
     }
+    //Combo boxe do Orientador em PropostaTC
     public void LoadCBOrientador (){
         cb_orientador_propostatc.removeAllItems();
         cb_orientador_propostatc.addItem("Selecione");
-         for (int i = 0; i< tbl_professor.getRowCount();i++){
+        //Percorre a lista de professores já cadastrados e add no cb
+        for (int i = 0; i< tbl_professor.getRowCount();i++){
                cb_orientador_propostatc.addItem(tbl_professor.getValueAt(i, 0).toString());
                }
     }
-    
+    //Combo boxe do Avaliador I em Banca
     public void LoadCBAvaliadorI (){
         cb_avaliadorI_banca.removeAllItems();
-        
         cb_avaliadorI_banca.addItem("Selecione");
-         for (int i = 0; i< tbl_professor.getRowCount();i++){
+        //Percorre a lista de professores já cadastrados e add no cb
+        for (int i = 0; i< tbl_professor.getRowCount();i++){
+            //add somente se nao estiver já como orientador
             if(!tbl_professor.getValueAt(i, 0).toString().equals(cb_orientador_banca.getSelectedItem())){
                 cb_avaliadorI_banca.addItem(tbl_professor.getValueAt(i, 0).toString());
             }
         }
     }
+    //Combo boxe do Avaliador II em Banca
     public void LoadCBAvaliadorII (){
         cb_avaliadorII_banca.removeAllItems();
-        
         cb_avaliadorII_banca.addItem("Selecione");
-         for (int i = 0; i< tbl_professor.getRowCount();i++){
+        //Percorre a lista de professores já cadastrados e add no cb
+        for (int i = 0; i< tbl_professor.getRowCount();i++){
+            //addd somente se nao estiver já como orientador ou como avaliador I
             if(!(tbl_professor.getValueAt(i, 0).toString().equals(cb_orientador_banca.getSelectedItem()) || tbl_professor.getValueAt(i, 0).toString().equals(cb_avaliadorI_banca.getSelectedItem()))){
                 cb_avaliadorII_banca.addItem(tbl_professor.getValueAt(i, 0).toString());
             }
         }
     }
-   
-     public void LoadCBOrientador_banca (){
+    //Combo boxe do Orientador em PropostaTC
+    public void LoadCBOrientador_banca (){
         cb_orientador_banca.removeAllItems();
-
         cb_orientador_banca.addItem("Selecione");
+        //Percorre a lista de professores já cadastrados com Proposta TC
         for (int i = 0; i< tbl_propostatc.getRowCount();i++){
-
+            //Procura por professores repetidos e elimina-os
             for (int k = 0; k < cb_orientador_banca.getItemCount();k++){
                 if(cb_orientador_banca.getItemAt(k).equals(tbl_propostatc.getValueAt(i, 2).toString())){
                     cb_orientador_banca.removeItemAt(k);
                 }
-
             }
             cb_orientador_banca.addItem(tbl_propostatc.getValueAt(i, 2).toString());
-
-
-
         }
     }
-    
-    
+    //Combo boxe do ID Banca da Avaliação
      public void LoadCBIdbanca (){
         cb_idbanca_avaliacao.removeAllItems();
-        
         cb_idbanca_avaliacao.addItem("Selecione");
+        //Procura por id bancas de bancas já criadas
          for (int i = 0; i< tbl_banca.getRowCount();i++){
                cb_idbanca_avaliacao.addItem(tbl_banca.getValueAt(i, 3).toString());
-               
-              
-               
         }
-        
     }
      
     //Botões
@@ -211,8 +212,6 @@ public class Crud extends javax.swing.JFrame {
         LoadCBAvaliadorI();
         LoadCBAvaliadorII();
         LoadCBOrientador_banca();
-
-       
         c_idbanca_banca.setText("");
     }
     
@@ -1441,7 +1440,7 @@ public class Crud extends javax.swing.JFrame {
     }//GEN-LAST:event_cb_orientador_bancaPropertyChange
 
     private void cb_orientador_bancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_orientador_bancaActionPerformed
-        //LoadCBAvaliadorII();
+        //recarrega o cb_avaliador II e cb_avaliador I toda vez que é executada uma ação em Orientador
         if(cb_orientador_banca.getItemCount()>1) {
             LoadCBAvaliadorII();
             LoadCBAvaliadorI();
@@ -1451,10 +1450,9 @@ public class Crud extends javax.swing.JFrame {
     }//GEN-LAST:event_cb_orientador_bancaActionPerformed
 
     private void cb_avaliadorI_bancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_avaliadorI_bancaActionPerformed
-        //LoadCBAvaliadorII();
+        //recarrega o cb_avaliador II toda vez que é executada uma ação em avaliador I
         if(cb_orientador_banca.getItemCount()>1) {
             LoadCBAvaliadorII();
-            
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_cb_avaliadorI_bancaActionPerformed

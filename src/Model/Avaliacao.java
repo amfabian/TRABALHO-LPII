@@ -59,47 +59,44 @@ public class Avaliacao {
             json.put("nota", this.Nota);
             return json;
     }
-    
+    //Utilizada inserir e editar os itens e armazená-los em arquivo
     public boolean Persistir(boolean editar){
         JSONObject json = this.toJson();
-        
         String base = ArquivoAvaliacao.Read();
         JSONArray jA = new JSONArray();
         if(!base.isEmpty() && base.length()>5) 
                jA = new JSONArray(base);
-        
-         if (jA.isNull(0)){
+        // verifica se o arquivo esta vazio
+        if (jA.isNull(0)){
            jA.put(json);
-       } else {
-           // verifica se o arquivo esta vazio
-       
-            //caso o arquivo nao esteja vazio, procura por matricula repetida e impede a insercao
+        } else {
+            //caso o arquivo nao esteja vazio, 
+            //procura pela id repetida e impede a insercao caso o usuario nao tenha clicado no botao editar
             boolean achou = false;
             int i = 0;
-       
             for(i=0; i <jA.length();i++){
                 if(jA.getJSONObject(i).getString("idbanca").equals(json.getString("idbanca"))){
-                achou = true;
-                if(editar){
-                   jA.put(i, json);
-                   ArquivoAvaliacao.Write(jA.toString());
-                }
-                break;
-                } else {achou = false;}}
-            
+                    achou = true;
+                    if(editar){
+                        jA.put(i, json);
+                        ArquivoAvaliacao.Write(jA.toString());
+                    }
+                    break;
+                }   else {achou = false;}
+            }
             if(achou){
                 return (false ||editar);
-                
-            } else {
-                jA.put(json);
+            }   else {
+                    jA.put(json);
                 }   
        }
+        //escreve no arquivo
         ArquivoAvaliacao.Write(jA.toString());
-       
+        //retorna true caso tenha conseguido inserir/editar
         return true;
     }
     
-    
+    //Utilizada para Remover item do arquivo
     public boolean Remover (){
         boolean achou = false;
         int i = 0;
@@ -107,8 +104,9 @@ public class Avaliacao {
         JSONObject json = this.toJson();
         String base = ArquivoAvaliacao.Read();
         JSONArray jA = new JSONArray();
+        //Verifica se não está vazio.
         if(!base.isEmpty() && base.length()>5) jA = new JSONArray(base);
-        
+        //Caso não esteja vazio, procura pela id que será removida.
         for(i=0; i <jA.length();i++){
              //  if(jA.getJSONObject(i).getInt("idbanca") == json.getInt("idbanca")){
               if(jA.getJSONObject(i).getString("matricula").equals(json.getString("matricula"))){
@@ -117,6 +115,7 @@ public class Avaliacao {
                     break;
                 }                    
         }
+        //caso ache, remove o item.
         if(achou){
             jA.remove(i);
             ArquivoAvaliacao.Write(jA.toString());

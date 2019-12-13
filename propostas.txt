@@ -1,1 +1,1 @@
-[{"titulo":"Programação","orientador":"Fabio","autor":"Alex"},{"titulo":"Programação JAVA","orientador":"Karen","autor":"Gabriel"},{"titulo":"Paginas WEB","orientador":"Rodrigo","autor":"Dafne"}]
+[{"titulo":"Programação","orientador":"Fabio","autor":"Alex"},{"titulo":"Programação JAVA","orientador":"Karen","autor":"Gabriel"},{"titulo":"Paginas WEB","orientador":"Rodrigo","autor":"Dafne"},{"titulo":"Outra proposta","orientador":"Karen","autor":"Joao"}]
